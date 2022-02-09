@@ -16,7 +16,7 @@ ProviderSeed implements a Signature Provider for [Signer](https://github.com/wav
 To install Signer and ProviderSeed libraries use
 
 ```bash
-npm i @waves/signer @waves/provider-seed @waves/waves-transactions
+npm i @decentralchain/signer @decentralchain/provider-seed @decentralchain/waves-transactions
 ```
 
 ### 2. Library initialization
@@ -26,14 +26,14 @@ Add library initialization to your app.
 * For Testnet:
 
    ```js
-   import { Signer } from '@waves/signer';
-   import { ProviderSeed } from '@waves/provider-seed';
-   import { libs } from '@waves/waves-transactions';
+   import { Signer } from '@decentralchain/signer';
+   import { ProviderSeed } from '@decentralchain/provider-seed';
+   import { libs } from '@decentralchain/waves-transactions';
    
    const seed = libs.crypto.randomSeed();
    const signer = new Signer({
      // Specify URL of the node on Testnet
-     NODE_URL: 'https://nodes-testnet.wavesnodes.com'
+     NODE_URL: 'https://testnet-node.decentralchain.io'
    });
    const provider = new ProviderSeed(seed);
    signer.setProvider(provider);
@@ -42,9 +42,9 @@ Add library initialization to your app.
 * For Mainnet:
 
    ```js
-   import { Signer } from '@waves/signer';
-   import { ProviderSeed } from '@waves/provider-seed';
-   import { libs } from '@waves/waves-transactions';
+   import { Signer } from '@decentralchain/signer';
+   import { ProviderSeed } from '@decentralchain/provider-seed';
+   import { libs } from '@decentralchain/waves-transactions';
    
    const seed = libs.crypto.randomSeed();
    const signer = new Signer();

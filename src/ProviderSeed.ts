@@ -7,17 +7,17 @@ import {
     SignedTx,
     TypedData,
     UserData,
-} from '@waves/signer';
+} from '@decentralchain/signer';
 
-import { libs, signTx } from '@waves/waves-transactions';
+import { libs, signTx } from '@decentralchain/waves-transactions';
 
 export type ProviderSignedTx = SignedTx<SignerTx>;
 
 export class ProviderSeed implements Provider {
     private readonly _seed: string;
     private _options: ConnectOptions = {
-        NETWORK_BYTE: 'W'.charCodeAt(0),
-        NODE_URL: 'https://nodes.wavesplatform.com',
+        NETWORK_BYTE: '?'.charCodeAt(0),
+        NODE_URL: 'https://mainnet-node.decentralchain.io',
     };
 
     public user: UserData | null = null;

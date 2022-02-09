@@ -1,6 +1,6 @@
 import { ProviderSeed } from '../src';
-import { Signer } from '@waves/signer';
-import { libs } from '@waves/waves-transactions';
+import { Signer } from '@decentralchain/signer';
+import { libs } from '@decentralchain/waves-transactions';
 
 it('Check transfer', async () => {
     const seed = libs.crypto.randomSeed();

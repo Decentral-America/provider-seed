@@ -1,8 +1,18 @@
 {
-  "name": "@waves/provider-seed",
+  "name": "@decentralchain/provider-seed",
   "version": "0.2.0",
   "main": "dist/provider-seed.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Decentral-America/provider-seed"
+  },
+  "bugs": {
+    "url": "https://github.com/Decentral-America/provider-seed/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
@@ -13,9 +23,9 @@
   },
   "dependencies": {
     "@types/ramda": "^0.26.38",
-    "@waves/signer": "^1.0.7",
+    "@decentralchain/signer": "^1.0.8",
     "@waves/ts-types": "^1.0.2",
-    "@waves/waves-transactions": "^4.2.4",
+    "@decentralchain/waves-transactions": "^4.2.3",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
